@@ -158,6 +158,7 @@ class MiniWoBInstance(Thread):
         assert not hasattr(self, "driver"), "Instance {} already has a driver".format(
             self.index
         )
+        print(f"DEBUG:URL:{self.url}")
         options = webdriver.ChromeOptions()
         if self.headless:
             options.add_argument("headless")
@@ -308,7 +309,7 @@ class MiniWoBInstance(Thread):
 
     def get_state(self):
         """Get the current state.
-        
+
         Returns:
             MiniWoBState
         """
@@ -331,7 +332,7 @@ class MiniWoBInstance(Thread):
 
     def get_metadata(self):
         """Get other metadata.
-        
+
         Returns:
             dict with the following keys:
             - done (bool)

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # WebGym Visual MiniWoB environment registration script
 # Chapter 6, TensorFlow 2 Reinforcement Learning Cookbook | Praveen Palanisamy
-__version__ = "1.0.2"
+__version__ = "1.0.4"
 
 import sys
 import os

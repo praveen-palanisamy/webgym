@@ -12,7 +12,7 @@ long_description = (parent_dir / "README.md").read_text(encoding="utf-8")
 
 setup(
     name="webgym",  # Required
-    version="1.0.2",  # Required
+    version="1.0.4",  # Required
     description="Reinforcement Learning Environments for 50+ web-based tasks",  # Optional
     long_description=long_description,  # Optional
     long_description_content_type="text/markdown",  # Optional (see note above)
@@ -37,6 +37,7 @@ setup(
     keywords="webgym, rl web tasks, rl in browser, Gym environments",  # Optional
     package_dir={"": "src"},  # Optional
     packages=find_packages(where="src"),  # Required
+    include_package_data=True,
     python_requires=">=3.6, <4",
     install_requires=["gym"],
     project_urls={  # Optional
