@@ -12,7 +12,7 @@ long_description = (parent_dir / "README.md").read_text(encoding="utf-8")
 
 setup(
     name="webgym",  # Required
-    version="1.0.5",  # Required
+    version="1.0.6",  # Required
     description="Reinforcement Learning Environments for 50+ web-based tasks",  # Optional
     long_description=long_description,  # Optional
     long_description_content_type="text/markdown",  # Optional (see note above)
